@@ -1,0 +1,30 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { TNota1 TextBox
+    MoveScaled(11,6,38,7)
+  }
+  { TNota2 TextBox
+    MoveScaled(11,18,38,7)
+  }
+  { TNota3 TextBox
+    MoveScaled(11,30,38,7)
+  }
+  { BMedia Button
+    MoveScaled(22,41,17,6)
+    Text = ("Calcular media")
+  }
+  { LMedia Label
+    MoveScaled(7,53,52,8)
+    Background = Color.LightGray
+  }
+  { Label2 Label
+    MoveScaled(7,48,36,4)
+    Text = ("Resultado")
+  }
+  { Label1 Label
+    MoveScaled(11,1,40,4)
+    Text = ("Ingresa tres notas en los siguientes campos:")
+  }
+}

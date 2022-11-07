@@ -1,0 +1,22 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { LHora Label
+    MoveScaled(11,18,37,9)
+    Background = Color.SoftCyan
+    Text = ("Buenas") & "..."
+  }
+  { Teclado TextBox
+    MoveScaled(12,33,35,4)
+    Text = ("Introduce una hora aquí (solo hora)")
+  }
+  { BConfirmar Button
+    MoveScaled(20,45,18,5)
+    Text = ("Confirmar")
+  }
+  { Label2 Label
+    MoveScaled(11,10,42,6)
+    Text = ("Programa que pide hora por teclado y responde")
+  }
+}

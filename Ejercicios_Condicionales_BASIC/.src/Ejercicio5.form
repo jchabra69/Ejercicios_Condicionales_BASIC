@@ -1,0 +1,30 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { TNumero1 TextBox
+    MoveScaled(10,6,38,7)
+  }
+  { TNumero2 TextBox
+    MoveScaled(10,18,38,7)
+  }
+  { TNumero3 TextBox
+    MoveScaled(10,30,38,7)
+  }
+  { BOrdenar Button
+    MoveScaled(21,40,17,6)
+    Text = ("Ordenar")
+  }
+  { LOrdenado Label
+    MoveScaled(6,52,52,8)
+    Background = Color.Orange
+  }
+  { Label2 Label
+    MoveScaled(6,47,36,4)
+    Text = ("Resultado ordenado de mayor a menor:")
+  }
+  { Label1 Label
+    MoveScaled(10,1,40,4)
+    Text = ("Ingresa tres números en los siguientes campos:")
+  }
+}

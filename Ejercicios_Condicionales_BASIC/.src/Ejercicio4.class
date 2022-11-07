@@ -1,0 +1,56 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  
+
+End
+
+Public Sub BMedia_Click()
+
+  Dim media As Integer
+  Dim nota1 As Integer
+  Dim nota2 As Integer
+  Dim nota3 As Integer
+  
+  ' HAY QUE ARREGLAR LAS COMAS, AL INTRODUCIR POR TECLADOS NÚMEROS CON COMAS, NO SE LOS TRAGA
+  
+  nota1 = TNota1.Text
+  nota2 = TNota2.Text
+  nota3 = TNota3.Text
+
+  media = (nota1 + nota2 + nota3) / 3
+  
+  If (media <= 5) Then 
+    
+    LMedia.Text = "Tu nota es insuficiente: " & media
+    
+  Endif
+  
+   If (media >= 5) And (media > 6) Then
+      
+      LMedia.Text = "Tu nota es suficiente: " & media
+      
+    Endif
+  
+   If (media >= 6) And (media > 7) Then
+      
+      LMedia.Text = "Tu nota es buena: " & media
+      
+    Endif
+    
+     If (media >= 7) And (media > 8.5) Then
+      
+      LMedia.Text = "Tu nota es notable: " & media
+      
+    Endif
+    
+    
+     If (media >= 8.5) Then
+      
+      LMedia.Text = "Tu nota es sobresaliente: " & media
+      
+    Endif
+    
+End

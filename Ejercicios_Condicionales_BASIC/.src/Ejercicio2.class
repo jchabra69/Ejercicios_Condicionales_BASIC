@@ -1,0 +1,31 @@
+' Gambas class file
+
+
+Public Sub BConfirmar_Click()
+
+  Dim dia As Integer
+  
+  dia = Teclado.Text
+  
+  Select Case dia
+    
+    Case 1 
+      LDia.Text = "Lunes"
+      
+    Case 2
+      LDia.Text = "Martes"
+    Case 3
+      LDia.text = "Miércoles"
+    Case 4
+      LDia.text = "Jueves"
+    Case 5
+      LDia.text = "Viernes"
+    Case 6
+      LDia.Text = "Sábado"
+    Case 7
+      LDia.Text = "Domingo"
+      
+  End Select
+          
+  
+End

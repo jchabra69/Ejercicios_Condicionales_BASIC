@@ -1,0 +1,41 @@
+' Gambas class file
+
+
+Public Sub BOrdenar_Click()
+
+  Dim numero1 As Integer
+  Dim numero2 As Integer
+  Dim numero3 As Integer
+  
+  numero1 = TNumero1.Text
+  numero2 = TNumero2.Text
+  numero3 = TNumero3.Text
+  
+  'Algunas sentencias no ordenan bien el segundo número xd, creo que puede tener algo que ver con la interfaz gráfica...  
+  
+  If (numero1 >= numero2) & (numero2 >= numero3) Then 
+    
+    LOrdenado.Text = (" " & numero1 & "_" & numero2 & "_" & numero3 & "_")
+    
+    Else If (numero1 >= numero3) & (numero3 >= numero2)
+    
+    LOrdenado.Text = (" " & numero1 & "_" & numero3 & "_" & numero2 & "_")
+    
+    Else If (numero2 >= numero1) & (numero1 >= numero3) 
+      
+      LOrdenado.Text = (" " & numero2 & "_" & numero1 & "_" & numero3 & "_")
+      
+    Else If (numero2 >= numero3) & (numero3 >= numero1)
+      
+      LOrdenado.Text = (" " & numero2 & "_" & numero3 & "_" & numero1 & "_")
+      
+    Else If (numero3 >= numero1) & (numero1 >= numero2)
+      
+      LOrdenado.Text = (" " & numero3 & "_" & numero1 & "_" & numero2 & "_")
+    
+    Else 
+    LOrdenado.Text = (" " & numero3 & "_" & numero2 & "_" & numero1 & "_")
+    
+  Endif
+  
+End

@@ -1,0 +1,35 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  
+
+End
+
+
+Public Sub BCalcular_Click()
+
+Dim salario As Integer
+Dim horas As Integer
+
+horas = Teclado.Text
+
+If (horas >= 41) Then 
+  
+  horas = horas - 40
+  salario = 40 * 15 + horas * 20
+  
+  LResultado.Text = salario & "€"
+  
+  Else 
+    
+    salario = horas * 15
+    
+    LResultado.Text = salario & "€"
+  
+Endif
+
+
+
+End

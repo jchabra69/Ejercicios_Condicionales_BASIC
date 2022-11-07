@@ -1,0 +1,25 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Teclado TextBox
+    MoveScaled(11,12,37,6)
+  }
+  { Label1 Label
+    MoveScaled(11,7,45,4)
+    Text = ("Ingresa por teclado las horas semanales trabajadas ")
+  }
+  { BCalcular Button
+    MoveScaled(24,22,13,6)
+    Text = ("Calcular")
+  }
+  { LResultado Label
+    MoveScaled(9,35,45,23)
+    Background = Color.Yellow
+    Text = ("Solución")
+  }
+  { Label2 Label
+    MoveScaled(9,31,45,4)
+    Text = ("Te corresponden:")
+  }
+}

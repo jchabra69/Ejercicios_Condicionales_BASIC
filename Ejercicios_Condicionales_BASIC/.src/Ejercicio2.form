@@ -1,0 +1,22 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { LDia Label
+    MoveScaled(9,16,37,9)
+    Background = Color.SoftBlue
+    Text = ("Día") & "..."
+  }
+  { Teclado TextBox
+    MoveScaled(10,31,35,4)
+    Text = ("Introduce un número del 1 al 7")
+  }
+  { BConfirmar Button
+    MoveScaled(18,43,18,5)
+    Text = ("Confirmar")
+  }
+  { Label2 Label
+    MoveScaled(2,7,70,7)
+    Text = ("Programa que te dice los días de la semana acorde al número ingresado")
+  }
+}

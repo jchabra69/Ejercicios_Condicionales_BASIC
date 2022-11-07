@@ -1,0 +1,43 @@
+' Gambas class file
+
+
+
+
+Public Sub Form_Open()
+
+  
+
+End
+
+Public Sub BConfirmar_Click()
+
+  Dim hora As Integer
+  
+  hora = Teclado.Text
+  
+  
+  If (hora >= 6) And (hora <= 12) Then
+    
+    LHora.Text = "Buenos días"
+    
+  Endif
+  
+  If (hora >= 13) And (hora <= 20) Then
+    
+    LHora.Text = "Buenas tardes"
+    
+  Endif
+
+  If (hora >= 21) And (hora <= 24) Then
+    
+    LHora.Text = "Buenas noches"
+    
+    Else If (hora <= 5) And (hora >= 0) Then 
+      
+      LHora.Text = "Buenas noches"
+    
+  Endif
+
+End
+
+
