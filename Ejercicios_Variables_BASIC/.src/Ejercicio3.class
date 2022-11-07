@@ -1,0 +1,8 @@
+' Gambas class file
+
+
+Public Sub BName_Click()
+
+ LNombre.Text = "Pepito Calzaslargas de Manchuria"
+
+End
